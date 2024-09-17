@@ -2,17 +2,619 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Webpage Title -->
+  <title>Khaddyo - Food Website</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Favicon  -->
+  <link rel="icon" href="img/logo.webp" />
 </head>
 
-<body>
-    <h1 class="text-9xl font-bold text-red-300">
-        Hello world!
-    </h1>
-</body>
+<section class="relative">
 
-<script src="js/script.js"></script>
+  <!-- Navbar Starts -->
+  <header class="border-b-2 border-ash-400 sticky top-0 left-0 right-0 z-20 bg-base-100">
+    <div class="navbar container mx-auto">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-20 mt-3 w-52 p-2 shadow">
+            <li><a class="btn btn-ghost text-base">Potato</a></li>
+            <li><a class="btn btn-ghost text-base">Soup</a></li>
+            <li><a class="btn btn-ghost text-base">Chicken</a></li>
+            <li><a class="btn btn-ghost text-base">Dessert</a></li>
+            <li><a class="btn btn-ghost text-base">Pasta</a></li>
+            <li><a class="btn btn-ghost text-base">Vegan</a></li>
+          </ul>
+        </div>
+        <img class="w-10 md:w-12 lg:w-16" src="img/logo.webp" alt="Khaddyo Logo">
+        <a class="text-xl ml-2 font-bold font-[philosopher]" href=".">Khaddyo</a>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="btn btn-ghost text-base text-violet-700 border-b-2 border-violet-700">Potato</a></li>
+          <li><a class="btn btn-ghost text-base">Soup</a></li>
+          <li><a class="btn btn-ghost text-base">Chicken</a></li>
+          <li><a class="btn btn-ghost text-base">Dessert</a></li>
+          <li><a class="btn btn-ghost text-base">Pasta</a></li>
+          <li><a class="btn btn-ghost text-base">Vegan</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar Ends -->
+
+  <!-- Carousel Section Starts -->
+  <section id="top">
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: url(img/hero-1.webp);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="">
+              <h1
+                class="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white font-[philosopher]">
+                Fresh Flavors, Every
+                Bite!</h1>
+              <p class="mb-5 text-lg">
+                Discover the taste of freshly sourced ingredients, prepared to perfection.
+              </p>
+              <button
+                class="text-lg py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
+                Explore Our Menu
+              </button>
+
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: url(img/hero-2.webp);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="">
+              <h1
+                class="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white font-[philosopher]">
+                Satisfy Your Cravings
+              </h1>
+              <p class="mb-5 text-lg">
+                From comfort food classics to gourmet delights, we have something for everyone.
+              </p>
+              <button
+                class="text-lg py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Order
+                Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: url(img/hero-3.webp);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="">
+              <h1
+                class="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white font-[philosopher]">
+                Indulge in
+                Deliciousness</h1>
+              <p class="mb-5 text-lg">
+                Handcrafted meals designed to make every meal a memorable experience.
+              </p>
+              <button
+                class="text-lg py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Start
+                Your Feast</button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Carousel Section Ends -->
+
+  <!-- Food Menu Section Starts -->
+  <section class="py-20">
+    <div class="container mx-auto">
+      <p class="text-center font-[philosopher] text-violet-700 tracking-[.25rem] mb-2">MENU</p>
+      <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher] text-center mb-10">All Foods In this
+        Category</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+        <div class="card glass">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-[philosopher]">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button
+                class="py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="card glass">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-[philosopher]">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button
+                class="py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="card glass">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-[philosopher]">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button
+                class="py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="card glass">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-[philosopher]">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button
+                class="py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="card glass">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-[philosopher]">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button
+                class="py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="card glass">
+          <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="car!" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title font-[philosopher]">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+              <button
+                class="py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Food Menu Section Ends -->
+
+  <!-- FAQ Section Starts -->
+  <section class="py-20 bg-violet-100">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="flex flex-col items-start justify-center  p-4">
+          <p class="text-center font-[philosopher] text-violet-700 tracking-[.25rem] mb-2">FAQ</p>
+          <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher]">Got Questions?<br>We Have Answers!
+          </h2>
+          <p class="py-6">
+            Find everything you need to know about our menu, services, and more.
+          </p>
+          <button
+            class="text-lg py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">Have a query?</button>
+        </div>
+
+        <div class="p-4">
+          <div class="collapse collapse-plus border border-base-100 my-2">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium font-[philosopher]">What types of cuisine do you offer?</div>
+            <div class="collapse-content">
+              <p>We offer a wide variety of cuisines, including Italian, Mexican, Indian, and American classics. Whether
+                you're in the mood for pasta, tacos, or a juicy burger, we’ve got something to satisfy your cravings.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border border-base-100 my-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium font-[philosopher]">Do you offer vegetarian or vegan options?
+            </div>
+            <div class="collapse-content">
+              <p>Yes! We have a range of vegetarian and vegan dishes that are just as flavorful and satisfying as our
+                non-vegetarian options. Look for the special icons on the menu for plant-based choices.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border border-base-100 my-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium font-[philosopher]">Can I customize my order?</div>
+            <div class="collapse-content">
+              <p>Absolutely! We encourage customization to suit your taste. Whether it's swapping out ingredients or
+                adjusting spice levels, just let us know when you order.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border border-base-100 my-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium font-[philosopher]">How can I place an order online?</div>
+            <div class="collapse-content">
+              <p>Ordering online is easy! Simply browse our menu, add items to your cart, and proceed to checkout. You
+                can choose delivery or pick-up, and our team will ensure your meal is freshly prepared.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus border border-base-100 my-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium font-[philosopher]">Do you offer catering services for
+              events?</div>
+            <div class="collapse-content">
+              <p>Yes, we provide catering for all types of events, from small gatherings to large parties. Contact us to
+                discuss your requirements, and we’ll create a custom menu to make your event special.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section Ends -->
+
+  <!-- Review Section Starts -->
+  <section class="py-20">
+    <div class="container mx-auto">
+      <p class="text-center font-[philosopher] text-violet-700 tracking-[.25rem] mb-2">REVIEW</p>
+      <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher] text-center mb-10">Over 100+ People Trust
+        Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+
+        <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden border">
+          <!-- Review Text -->
+          <div class="p-4">
+            <p class="text-gray-700">The pasta was absolutely delicious! The flavors were perfectly balanced, and the presentation was impressive. I loved every bite and can't wait to return to try more dishes.</p>
+          </div>
+
+          <div class="flex items-center p-4">
+            <!-- Avatar -->
+            <img class="w-12 h-12 rounded-full border-2 border-gray-200" src="img/avatar.webp" alt="Avatar">
+
+            <div class="ml-4">
+              <!-- Name -->
+              <h2 class="text-md font-semibold font-[philosopher]">Alice Johnson</h2>
+              <!-- Review Stars -->
+              <div class="flex text-yellow-500 mt-1">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden border">
+          <!-- Review Text -->
+          <div class="p-4">
+            <p class="text-gray-700">The steak was cooked to perfection, juicy, and full of flavor. The seasoning was spot-on, and the sides complemented the dish wonderfully. Highly recommend for a great dining experience.</p>
+          </div>
+
+          <div class="flex items-center p-4">
+            <!-- Avatar -->
+            <img class="w-12 h-12 rounded-full border-2 border-gray-200" src="img/avatar.webp" alt="Avatar">
+
+            <div class="ml-4">
+              <!-- Name -->
+              <h2 class="text-md font-semibold font-[philosopher]">Bob Smith</h2>
+              <!-- Review Stars -->
+              <div class="flex text-yellow-500 mt-1">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden border">
+          <!-- Review Text -->
+          <div class="p-4">
+            <p class="text-gray-700">The sushi here is fresh and delightful. Each roll is made with quality ingredients, and the flavors are well-balanced. The service was excellent, making the meal even more enjoyable.
+            </p>
+          </div>
+
+          <div class="flex items-center p-4">
+            <!-- Avatar -->
+            <img class="w-12 h-12 rounded-full border-2 border-gray-200" src="img/avatar.webp" alt="Avatar">
+
+            <div class="ml-4">
+              <!-- Name -->
+              <h2 class="text-md font-semibold font-[philosopher]">Clara Davis</h2>
+              <!-- Review Stars -->
+              <div class="flex text-yellow-500 mt-1">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden border">
+          <!-- Review Text -->
+          <div class="p-4">
+            <p class="text-gray-700">I had the best burger of my life at this place. The patty was tender, and the toppings were fresh. The fries were crispy and seasoned perfectly. An overall fantastic meal!</p>
+          </div>
+
+          <div class="flex items-center p-4">
+            <!-- Avatar -->
+            <img class="w-12 h-12 rounded-full border-2 border-gray-200" src="img/avatar.webp" alt="Avatar">
+
+            <div class="ml-4">
+              <!-- Name -->
+              <h2 class="text-md font-semibold font-[philosopher]">David Brown</h2>
+              <!-- Review Stars -->
+              <div class="flex text-yellow-500 mt-1">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden border">
+          <!-- Review Text -->
+          <div class="p-4">
+            <p class="text-gray-700">The dessert was a real treat! The chocolate cake was rich and moist, with a creamy frosting. It was the perfect end to a wonderful meal. I’m definitely coming back for more sweets.</p>
+          </div>
+
+          <div class="flex items-center p-4">
+            <!-- Avatar -->
+            <img class="w-12 h-12 rounded-full border-2 border-gray-200" src="img/avatar.webp" alt="Avatar">
+
+            <div class="ml-4">
+              <!-- Name -->
+              <h2 class="text-md font-semibold font-[philosopher]">Emma Wilson</h2>
+              <!-- Review Stars -->
+              <div class="flex text-yellow-500 mt-1">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden border">
+          <!-- Review Text -->
+          <div class="p-4">
+            <p class="text-gray-700">The salad was incredibly fresh and flavorful. The ingredients were crisp, and the dressing added just the right amount of zest. It’s a great option for a healthy and satisfying meal.</p>
+          </div>
+
+          <div class="flex items-center p-4">
+            <!-- Avatar -->
+            <img class="w-12 h-12 rounded-full border-2 border-gray-200" src="img/avatar.webp" alt="Avatar">
+
+            <div class="ml-4">
+              <!-- Name -->
+              <h2 class="text-md font-semibold font-[philosopher]">Frank Miller</h2>
+              <!-- Review Stars -->
+              <div class="flex text-yellow-500 mt-1">
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+                <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      
+    </div>
+    <div class="flex justify-center mt-10">
+      <button class="text-lg py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75">
+        Have a review?
+      </button>
+    </div>
+  </section>
+  <!-- Review Section Ends -->
+
+  <!-- Contact Us Section Starts -->
+  <section class="py-20 bg-violet-100">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="flex flex-col items-start justify-center  p-4">
+          <p class="text-center font-[philosopher] text-violet-700 tracking-[.25rem] mb-2">CONTACT</p>
+          <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher]">Get in Touch with Us
+          </h2>
+          <p class="py-6">
+            We’re here to assist you with any inquiries, feedback, or support you may need. Reach out today and let’s start a conversation!
+          </p>
+        </div>
+
+        <div class="p-4">
+          <form>
+            <div class="pb-12">
+              <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-3">
+                  <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                  <div class="mt-2">
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" required>
+                  </div>
+                </div>
+        
+                <div class="sm:col-span-3">
+                  <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                  <div class="mt-2">
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" required>
+                  </div>
+                </div>
+        
+                <div class="sm:col-span-full">
+                  <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                  <div class="mt-2">
+                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6" required>
+                  </div>
+                </div>
+
+                <div class="sm:col-span-3">
+                  <label for="type" class="block text-sm font-medium leading-6 text-gray-900">Query Type</label>
+                  <div class="mt-2">
+                    <select id="type" name="type" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset  sm:max-w-xs sm:text-sm sm:leading-6">
+                      <option>General Inquiry</option>
+                      <option>Order</option>
+                      <option>Review</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-span-full">
+                  <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Message</label>
+                  <div class="mt-2">
+                    <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" required></textarea>
+                  </div>
+                </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-end gap-x-6">
+              <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us Section Ends -->
+
+  <!-- Footer Section Starts -->
+  <section class="bg-neutral">
+    <div class="container mx-auto">
+      <footer class="footer bg-neutral text-neutral-content items-center p-4">
+        <aside class="grid-flow-col items-center">
+          <img class="w-10" src="img/logo.webp" alt="Khaddyo Logo">
+          <p>Copyright © Khaddyo - All right reserved</p>
+        </aside>
+        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+            </svg>
+          </a>
+          
+        </nav>
+      </footer>
+    </div> 
+  </section>
+  <!-- Footer Section Ends -->
+
+  <!-- Floating Button -->
+  <button id="scrollToTop" class="fixed bottom-6 right-6 bg-violet-700 text-white p-3 rounded-full shadow-lg hover:bg-violet-600">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+  
+  <script src="js/script.js"></script>
+  </body>
 </html>

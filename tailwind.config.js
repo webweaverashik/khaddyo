@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{html,js}"],
-    theme: {
-      extend: {},
+  content: ["./src/**/*.{html,js}"], // Content paths
+  theme: {
+    extend: {
+
     },
-    plugins: [],
-  }
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+};
+
+
+//  yellow  color: #ff9000
+// dark brown color: #35190b
