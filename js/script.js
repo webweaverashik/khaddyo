@@ -35,7 +35,7 @@ function createMealCard(meal) {
   const instructionsExcerpt = meal.strInstructions.split(' ').slice(0, 20).join(' ') + '...';
 
   return `
-    <div class="card glass cursor-pointer">
+    <div class="card glass">
       <figure class="relative overflow-hidden">
         <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="w-full h-auto object-cover" />
       </figure>
@@ -89,11 +89,11 @@ document.querySelectorAll('.menu li a').forEach(link => {
 
     // Remove the active class from all links
     document.querySelectorAll('.menu li a').forEach(link => {
-      link.classList.remove('text-black', 'text-violet-700', 'border-b-2', 'border-violet-700');
+      link.classList.remove('text-violet-700', 'border-b-2', 'border-violet-700', 'dark:bg-white');
     });
 
     // Add the active class to the clicked link
-    this.classList.add('text-violet-700', 'border-b-2', 'border-violet-700');
+    this.classList.add('text-violet-700', 'border-b-2', 'border-violet-700', 'dark:bg-white');
 
     // Go to the menu section when clicking on the category
     document.getElementById('menu').scrollIntoView({

@@ -45,11 +45,11 @@
       </div>
       <div class="navbar-end hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li><a class="btn btn-ghost text-base hover:bg-white dark:bg-white text-violet-700 border-b-2 border-violet-700 hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Beef</a></li>
-          <li><a class="btn btn-ghost text-base hover:bg-white text-black hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Chicken</a></li>
-          <li><a class="btn btn-ghost text-base hover:bg-white text-black hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Lamb</a></li>
-          <li><a class="btn btn-ghost text-base hover:bg-white text-black hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Fish</a></li>
-          <li><a class="btn btn-ghost text-base hover:bg-white text-black hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Soup</a></li>
+          <li class="mx-0.5"><a class="btn btn-ghost text-base hover:bg-white dark:bg-white text-violet-700 border-b-2 border-violet-700 hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Beef</a></li>
+          <li class="mx-0.5"><a class="btn btn-ghost text-base hover:bg-white hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Chicken</a></li>
+          <li class="mx-0.5"><a class="btn btn-ghost text-base hover:bg-white hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Lamb</a></li>
+          <li class="mx-0.5"><a class="btn btn-ghost text-base hover:bg-white hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Fish</a></li>
+          <li class="mx-0.5"><a class="btn btn-ghost text-base hover:bg-white hover:text-violet-700 hover:border-b-2 hover:border-violet-700">Soup</a></li>
         </ul>
       </div>
     </div>
@@ -68,7 +68,7 @@
                 class="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white font-[philosopher]">
                 Fresh Flavors, Every
                 Bite!</h1>
-              <p class="mb-5 text-lg">
+              <p class="mb-5 text-lg dark:text-white">
                 Discover the taste of freshly sourced ingredients, prepared to perfection.
               </p>
               <button class="text-lg py-2 px-5 bg-violet-700 text-white font-semibold rounded-full shadow-md hover:bg-violet-500 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75 cursor-pointer scrollToMenuButton">
@@ -139,7 +139,7 @@
   <section class="py-20" id="menu">
     <div class="container mx-auto">
       <p class="text-center font-[philosopher] text-violet-700 tracking-[.25rem] mb-2">MENU</p>
-      <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher] text-center mb-10">All Foods In this
+      <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher] text-center mb-10 dark:text-white">All Foods In this
         Category</h2>
       <div id="meal-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-6">
         <!-- Cards will be dynamically inserted here -->
@@ -154,7 +154,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div class="flex flex-col items-start justify-center  p-4">
           <p class="text-center font-[philosopher] text-violet-700 tracking-[.25rem] mb-2">FAQ</p>
-          <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher]">Got Questions?<br>We Have Answers!
+          <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher] dark:text-black">Got Questions?<br>We Have Answers!
           </h2>
           <p class="py-6">
             Find everything you need to know about our menu, services, and more.
@@ -217,7 +217,7 @@
   <section class="py-20">
     <div class="container mx-auto">
       <p class="text-center font-[philosopher] text-violet-700 tracking-[.25rem] mb-2">REVIEW</p>
-      <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher] text-center mb-10">Over 100+ People Trust
+      <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher] text-center mb-10 dark:text-white">Over 100+ People Trust
         Us</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
 
@@ -420,7 +420,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div class="flex flex-col items-start justify-center  p-4">
           <p class="text-center font-[philosopher] text-violet-700 tracking-[.25rem] mb-2">CONTACT</p>
-          <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher]">Get in Touch with Us
+          <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold font-[philosopher] dark:text-black">Get in Touch with Us
           </h2>
           <p class="py-6">
             We’re here to assist you with any inquiries, feedback, or support you may need. Reach out today and let’s start a conversation!
@@ -434,28 +434,28 @@
                 <div class="sm:col-span-3">
                   <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
                   <div class="mt-2">
-                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" required>
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 dark:text-white" required>
                   </div>
                 </div>
         
                 <div class="sm:col-span-3">
                   <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
                   <div class="mt-2">
-                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" required>
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 dark:text-white" required>
                   </div>
                 </div>
         
                 <div class="sm:col-span-full">
                   <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
                   <div class="mt-2">
-                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6" required>
+                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6 dark:text-white" required>
                   </div>
                 </div>
 
                 <div class="sm:col-span-3">
                   <label for="type" class="block text-sm font-medium leading-6 text-gray-900">Query Type</label>
                   <div class="mt-2">
-                    <select id="type" name="type" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset  sm:max-w-xs sm:text-sm sm:leading-6">
+                    <select id="type" name="type" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset  sm:max-w-xs sm:text-sm sm:leading-6 dark:text-white">
                       <option>General Inquiry</option>
                       <option>Order</option>
                       <option>Review</option>
@@ -466,13 +466,13 @@
                 <div class="col-span-full">
                   <label for="about" class="block text-sm font-medium leading-6 text-gray-900">Message</label>
                   <div class="mt-2">
-                    <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" required></textarea>
+                    <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 dark:text-white" required></textarea>
                   </div>
                 </div>
             </div>
 
             <div class="mt-6 flex items-center justify-end gap-x-6">
-              <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Send Message</button>
+              <button type="submit" class="rounded-md bg-violet-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Send Message</button>
             </div>
           </form>
         </div>
