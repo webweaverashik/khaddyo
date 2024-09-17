@@ -103,7 +103,7 @@ document.querySelectorAll('.menu li a').forEach(link => {
 });
 
 
-// Fetch meals for the default category (e.g., 'Potato') when the page loads
+// Fetch meals for the default category
 window.onload = () => {
   fetchMeals('Beef');
 };
