@@ -10,7 +10,3 @@ module.exports = {
     require('@tailwindcss/forms'),
   ],
 };
-
-
-//  yellow  color: #ff9000
-// dark brown color: #35190b
